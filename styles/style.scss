@@ -1,0 +1,46 @@
+@import "./variables";
+@import "./body";
+
+* {
+    margin: 0;
+}
+
+#btn-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+
+    #activity-btn {
+        margin-top: 25px;
+        border: 1px solid $textColor;
+        padding: 5px 12px;
+        background-color: $btnColor;
+        color: $textColor;
+        border-radius: 5px;
+        cursor: pointer; 
+        
+        &:hover {
+            background: $primaryColor;
+            border: 1px solid $btnColor;
+            text-shadow: 5px 5px #558ABB;
+        }
+    }
+    
+}
+
+#footer-text {
+    color: $textColor;
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+
+//sass features
+//1. variables - most useful if we had multiple buttons in app, and wanted 
+// buttons to be exacly the same and DRY
+//2. nested selectors - useful to keep selectors in order and easy to find
+//3. "components" based css files. - most useful in large apps and codebases 
+//4. Mixin - creates css functions where you can keep DRY priciple and create
+//variables as parameters in order to change other areas of your page but want others
+//to stay how you defined it in the Mixin function 
+//5. Extensions 

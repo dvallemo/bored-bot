@@ -1,0 +1,16 @@
+@mixin displayCenter() {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    @include displayCenter();
+    background: linear-gradient(blue, $primaryColor);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $textColor;
+    font-family: "Jersey 25", "sans-serif";
+    font-size: 50px;
+}
